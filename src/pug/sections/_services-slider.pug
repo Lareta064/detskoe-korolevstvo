@@ -1,0 +1,24 @@
+mixin service-card(img, title, ...items)
+	.swiper-slide
+		.service-card
+			.service-card__img
+				img(src="./img/serv"+ img +".webp", alt="img")
+			.service-card__text
+				.service-card__title #{title}
+				ul
+					each item in items
+						li #{item}
+section.services-slider
+	.container
+		h2.h2 Досуг и развитие
+		.swiper.service-swiper
+			.swiper-wrapper
+				+service-card(6, 'Спортивное развитие', 'Занятия по ОФП', 'Йога для детей','Спортивные праздники')
+				+service-card(7, 'Творческое развитие', 'Занятия по лепке', 'Занятия по музыкальному воспитанию', 'Изостудия', )
+				+service-card(8, 'Иностранный язык', 'Занятия по английскому языку', 'Разучивание стихов на английском языке', 'Разучивание песенна  английском языке')
+				+service-card(9, 'Интеллектуальное развитие', 'занятия по математике','занятия по обучению грамоте','занятия по логике','занятия по окружающему миру')
+				+service-card(10, 'Организация праздников', '8 марта','День Победы','Праздник Осени','Новый Год','День рождения')
+				+service-card(11, 'Досуг и развитие', 'Развитие речевого дыхания')
+			
+			.swiper-button-next
+			.swiper-button-prev

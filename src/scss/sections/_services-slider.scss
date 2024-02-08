@@ -1,0 +1,43 @@
+.service-card {
+	width: remy(300);
+	border-radius: remy(12);
+	background-color: #fff;
+	overflow:hidden;
+	border: 3px dotted #0b9056;
+	background-color:goldenrod;
+	// background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: purple; stroke-width: 5; stroke-dasharray: 16 10'/></svg>");
+	.service-card__text{
+		padding: 1.5rem 1rem;
+		color: white;
+	}
+	.service-card__title{
+		text-align: center;
+		font-size: remy(22);
+		font-family: 'Montserrat-Medium';
+		margin-bottom: remy(16);
+	}
+	&__img {
+		height: remy(240);
+
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.service-swiper{
+	.swiper-slide{
+		min-height: 100%;
+		height: unset;
+		display: flex;
+	}
+	@media (max-width: remy(1199)) {
+		.swiper-button-next, .swiper-button-prev{display: none;}
+	}
+}
+.service-card__text ul{
+	margin-left: 1rem;
+	list-style-type: disc;
+	line-height: 1.7;
+}

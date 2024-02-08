@@ -60,5 +60,35 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 
-
+	var serviceSlider = new Swiper(".service-swiper", {
+		
+		loop: true,
+		speed: 1000,
+		slidesPerView: 1.1,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			640: {
+				slidesPerView: 1.5,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+			1440:{
+				slidesPerView: 4,
+			}
+		},
+	});
 })
