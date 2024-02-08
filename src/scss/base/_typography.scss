@@ -1,0 +1,61 @@
+.h1, .h2, .h4{
+	font-size: remy(70);
+	line-height: 1.1;
+	font-family: 'Montserrat-Bold';
+}
+.h2{
+	font-size: remy(60);
+	margin-bottom: 2.5rem;
+	// text-transform: uppercase;
+	
+	font-family: 'Montserrat-Bold';
+	background: linear-gradient(45deg, rgb(172, 8, 27) 33%, rgb(215, 11, 34) 66%, rgb(241, 66, 86));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+	@media (max-width: remy(767)) {
+	  font-size:remy(38) ;
+	}
+}
+
+.h3, .h5 {
+	font-size: remy(48);
+	line-height: 1.1;
+	font-family: 'Montserrat-Medium';
+}
+.h4 {font-size: remy(40);}
+.h5 {font-size: remy(38);}
+.gold-text{
+	color: $gold!important;
+}
+.text-accent {
+	color: var(--ac) !important;
+}
+.text-contrast{color: var(--contrast) !important;}
+button.text-accent, a.text-accent{
+	transition: .3s; 
+	&:hover{color: var(--contrastLight);}
+}
+.text-medium{
+	font-family: 'Montserrat-Medium';
+	font-size: remy(20);
+	@media (max-width: remy(767)) {
+	 font-size: remy(16);
+	}
+}
+.phone-number{
+	white-space: nowrap;
+}
+.bg-green{background-color: #0b9056!important;} 
+.bg-pink{background-color: #f96a9a!important;} 
+.bg-blue{background-color: #2aaae2!important;;} 
+.bg-purple{background-color:#c122d8!important;}
+.text-center{text-align: center; margin-left: auto; margin-right: auto;}
+@media (max-width: remy(1199)) {
+	.h1 {font-size: remy(54);}
+		
+	
+}
+@media (max-width: remy(767)) {
+	.h1{font-size: remy(32);}
+}

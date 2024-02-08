@@ -1,0 +1,48 @@
+.form-item{
+	position: relative;
+	input{
+		width: 100%;
+		display:block;
+		font-size: 1rem;
+		height: remy(50);
+		border: remy(1) solid $sec3;
+		border-radius: remy(5);
+		color: $sec1;
+
+	}
+	input::placeholder{
+		font-size: 1rem;
+		color: $sec3;
+	}
+}
+
+.search-form{
+	width: 100%;
+	column-gap: remy(70);
+	.form-item{width: 100%;}
+
+	.search-btn,
+	.reset-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+	}
+
+	.search-btn{
+		left: remy(8);
+		.svg-search{
+			width: remy(25);
+			height: remy(25);
+			fill: var(--ac);
+		}
+	}
+	
+	.reset-btn{
+		right: remy(8);
+	}
+	input{
+		padding-inline: remy(40);
+		
+	}
+}

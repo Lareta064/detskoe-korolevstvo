@@ -1,0 +1,69 @@
+
+header.header
+	
+	//======== navigation ===========
+	.header-nav.d-flex
+		.header-container.d-flex
+			a(href="#!").logo
+				img(src="./img/logo.webp", width="100" height="100" alt="logo")
+
+			//=== nav =====
+			#header-menu
+				nav.header-menu.d-flex
+					a(href="#about") О нас
+					a(href="#services") Наши услуги
+					a(href="#!") Цены
+					a(href="#!") Акции
+					a(href="#!") Программы
+					a(href="#!") Галерея
+					a(href="#!") Контакты
+
+
+			.header-nav__btn.d-flex
+				//====== button =====
+				a(href="#!").gold-text.text-medium.phone-number +7 (989) 940-03-81
+				
+				//====== menu-toggle =====
+				button.menu-toggle#menu-toggle
+					span
+
+
+	
+	//======== slider ===========
+	.header-content
+		//====== svg-bottom-border =====
+		.decore-content__svg
+			svg.svg-border-desk( viewBox="0 0 1440 35", fill="none", xmlns="http://www.w3.org/2000/svg")
+				path(d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0", fill="white")
+		
+			svg.svg-border-mob(viewBox="0 0 320 25", fill="none", xmlns="http://www.w3.org/2000/svg")
+				path(d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0", fill="white")
+		
+		
+		//====== header title =====
+		
+		.header-content__title
+			h1.h1 Сайт в разработке
+			//- a.btn(href="#!") See the benefits
+		//====== headerSwiper =====
+		.swiper.header-slider
+			.swiper-wrapper
+				//====== single slide ======
+				.swiper-slide
+					.header-slider__item
+						img(src="./img/header-slide1.webp", alt="img" loading="lazy")
+				//====== single slide ======
+				.swiper-slide
+					.header-slider__item
+						img(src="./img/header-slide2.webp", alt="img" loading="lazy")
+				//====== single slide ======
+				.swiper-slide
+					.header-slider__item
+						img(src="./img/header-slide3.webp", alt="img" loading="lazy")
+				//====== single slide ======
+				.swiper-slide
+					.header-slider__item
+						img(src="./img/header-slide4.webp", alt="img" loading="lazy")
+				
+			
+			.swiper-pagination

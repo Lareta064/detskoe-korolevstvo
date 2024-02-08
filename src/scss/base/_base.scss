@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src:  url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@function remy($pxsize) {
+  
+  @return calc(($pxsize/16))+rem;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  body{
+    --ac:#77000e;
+    --subAc: #FFC1D8;
+    --outBr: #FFDAE7;
+    --darkAc:#0b9056;
+    --contrast: #58CB3A;
+    --contrastLight: #166202;
+  }
+  body.green-theme {
+    --ac: #26D68A;
+    --subAc: #9BE8C7;
+    --outBr: #a1e7c9;
+    --darkAc: #0b9056;
+  }
+  
+
+  html {
+	scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat-Regular',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+  }
+ .lock{
+    overflow: hidden;
+ }
+  a,
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+	  padding: 0;
+	  margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+button, a{
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+button,
+input,
+button:focus, 
+input:focus {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+ 
+}
+.accent-span {
+  color: var(--subAc)!important;
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+.container{
+  width: remy(1470);
+  padding-inline: remy(16);
+  margin: 0 auto;
+  @media(max-width:remy(1919)){
+    width: remy(1390);
+  }
+  @media(max-width:remy(1439)) {
+    width: remy(1170);
+  }
+  @media(max-width:remy(1199)) {
+    width: remy(960);
+  }
+  @media(max-width:remy(991)) {
+    width: remy(730);
+  }
+  @media(max-width:remy(767)) {
+    width: remy(540);
+  }
+  @media(max-width:remy(574)) {
+    width: 100%;
+  }
+}
+.container-fluid{
+  width: 100%;
+  max-width:remy(1470);
+  padding-inline: remy(48);
+  margin: 0 auto;
+  @media(max-width:remy(991)) {
+    padding-inline: remy(16);
+  }
+}
+section{
+  padding-block: remy(100);
+  @media (max-width: remy(767)) {
+      padding-block: remy(50);
+  }
+}
+.js-btn-target{display: none;}
+.js-btn-target.active {
+  display: block;
+}

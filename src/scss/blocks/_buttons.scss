@@ -1,0 +1,60 @@
+.btn, .btn-outline{
+	
+	display: inline-block;
+	min-width: remy(237);
+	height: remy(68);
+	line-height: remy(68);
+	border-radius: remy(34);
+	background-color: var(--ac);
+	font-family: inherit;
+	font-size: 1rem;
+	font-family: 'Montserrat-Medium';
+	text-align: center;
+	flex-shrink: 0;
+	color: white;	
+	letter-spacing: remy(0.75);
+	cursor: pointer;
+	white-space: nowrap;
+	transition: 0.3s;
+	@media (max-width: remy(991)) {
+		height: remy(56);
+		line-height: remy(56);
+	}
+
+}
+.btn:hover{
+	background-color: var(--darkAc);
+}
+.btn:focus {
+	background-color: var(--darkAc);
+	outline: remy(9) solid var(--outBr);
+}
+.btn-outline{
+	line-height: remy(64);
+	border: remy(2) solid var(--ac);
+	background-color: white;
+	color: var(--ac);
+	@media (max-width: remy(991)) {
+		height: remy(60);
+		// line-height: remy(56);
+	}
+}
+.btn-outline--slim {
+	height: remy(50);
+	line-height: remy(46);
+	min-width: remy(166);
+	font-weight: 400;
+}
+.btn-outline:hover{
+	border-color: var(--darkAc);
+	color: var(--darkAc);
+}
+.btn-outline:focus {
+	border: remy(2) solid var(--ac);
+	color: var(--ac);
+	outline: remy(9) solid var(--outBr);
+	background-color: white;
+}
+.btn-outline.btn-outline--slim:focus{
+	outline: remy(5) solid var(--outBr);
+}
