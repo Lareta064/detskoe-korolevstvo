@@ -1,0 +1,55 @@
+.price-desk{
+	font-size: remy(18);
+	line-height: 1.5;
+	@media (max-width: remy(1199)) {
+	font-size: remy(16);
+	}
+	ul{
+		font-size: 16px;
+		line-height: 1.8;
+		list-style-type: disc;
+		margin-left: remy(20);
+		
+	}
+}
+.price-list{
+	padding-top: remy(32);
+
+	&-types{
+		li{
+			display: flex;
+			align-items: flex-end;
+			
+			padding-block: remy(16);
+
+			p, .price-amount{
+				flex-shrink: 0; 
+				font-size: remy(20);
+				font-weight: 700;
+				color: var(--ac);
+				
+
+		   }
+			.border-dashed{
+				margin-left: remy(8);
+				margin-right: remy(8);
+				flex-grow: 1;
+				display: inline-block;
+			}
+			@media (max-width: remy(767)) {
+				p,.price-amount{font-size: remy(16);}
+				p{max-width: 10.75rem;}
+			}
+		}
+	}
+}
+.border-dashed{
+	height: 1px;
+	border-bottom: 0px;
+	background-image: linear-gradient(to right, #fff 40%, gray 40%);
+	background-size: 24px 1px;
+	background-repeat: repeat-x;
+	@media (max-width: remy(767)){
+		background-size:14px 1px;
+	}
+}

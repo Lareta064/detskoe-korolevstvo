@@ -7,23 +7,77 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		meta(name='keywords' content='детский сад, садик, ясли, лучший садик в Грозном, Грозный детский сад, детское королевство, садик детское королевство, садик для детей')
+		meta(name='description' content='Детский сад Детское королевство придёт на помощь всем родителям, чьи непоседы подросли и готовы делать первые шаги в самостоятельную жизнь.')
+		meta(property='og:type' content='website')
+		meta(property='og:site_name' content='Детское Королевство')
+		meta(property='og:title' content='Детское Королевство')
+		meta(property='og:description' content='Детское Королевство ждет своих принцев и принцесс. Мы создаем все условия для комфортного пребывания и гармоничного развития Ваших деток. ')
+		meta(property='og:url' content='https://detskoe-korolevstvo.com/')
+		meta(property='og:locale' content='ru_RU')
+		meta(property='og:image' content='https://detskoe-korolevstvo.com/img/prev.webp')
+		meta(property='og:image:width' content='968')
+		meta(property='og:image:height' content='504')
+		
+		link(rel='apple-touch-icon' sizes='180x180' href='./img/favicon/apple-touch-icon.png')
+		link(rel='icon' type='image/png' sizes='32x32' href='./img/favicon/favicon-32x32.png')
+		link(rel='icon' type='image/png' sizes='16x16' href='./img/favicon/favicon-16x16.png')
+		link(rel='manifest' href='./img/favicon/site.webmanifest')
+		link(rel='shortcut icon' href='./img/favicon/favicon.ico')
+		meta(name='msapplication-TileColor' content='#da532c')
+		meta(name='msapplication-config' content='./img/favicon/browserconfig.xml')
+		meta(name='theme-color' content='#ffffff')
+		
 		
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
+		//======= галерея lightbox =============
+		link(rel="stylesheet" href="./libs/lightbox/css/lightbox.css" )
 		
 		//=============== swiper ===================
 		link(rel="stylesheet", href="./libs/swiper/swiper-bundle.min.css")
 		
 		link(rel="stylesheet", href="css/main.css")
+		style.
+			@font-face {
+				font-family: 'Montserrat-Regular';
+				src: url('./fonts/Montserrat-Regular.woff2') format('woff2');
+				font-weight: 400;
+				font-style: normal;
+				}
+				@font-face {
+				font-family: 'Montserrat-Medium';
+				src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
+				font-weight: 500;
+				font-style: normal;
+				}
+				@font-face {
+				font-family: 'Montserrat-Bold';
+				src:  url('./fonts/Montserrat-Bold.woff2') format('woff2');
+				font-weight: 700;
+				font-style: normal;
+				}
+				@font-face {
+				font-family: 'MIROSLC';
+				src: url('./fonts/MIROSLC.woff2') format('woff2');
+				font-weight: 700;
+				font-style: normal;
+				}
+
 		title !{title}
 		
 	body
-		
+		a(href="tel:+79899400381").pulse
+			svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 512 512")
+				path(d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z")
 		block content
 		
-		
+		//=============== jquery ===================
+		script(src="./libs/jquery/jquery-3.0.0.min.js")
 		//=============== swiper ===================
 		script(src="./libs/swiper/swiper-bundle.min.js")
-		
+		//======= галерея lightbox =============
+		script( src="./libs/lightbox/js/lightbox.js" )
+		script(src="./libs/jquery.lazy.min.js")
 		//=============== мои скрипты ==============	
 		script(src="js/main.js")

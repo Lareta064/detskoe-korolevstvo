@@ -1,11 +1,15 @@
 .logo{
-	width: remy(90);
-	height: remy(90);
-	padding: remy(12);
+	width: remy(100);
+	height: remy(100);
+	padding: remy(8);
 	margin-right: auto;
+	background-color: var(--ac);
 	flex-shrink: 0;
 	border-radius: 50%;
 	border: 3px solid #e7c881;
+	outline: 10px solid var(--ac);
+	position: relative;
+	top:remy(10);
 	overflow: hidden;
 	img{
 		width: 100%;
@@ -17,6 +21,7 @@
 		width: remy(60);
 		height: remy(60);
 		padding: remy(8);
+		top: remy(5);
 	}
 
 }
@@ -28,6 +33,7 @@
 }
 .header{
 	position: relative;
+
 }
 .header-nav{
 	height: remy(101);
@@ -36,6 +42,9 @@
 	background-color: var(--ac);
 	position: relative;
 	z-index: 5;
+	position: sticky;
+		top: 0;
+		z-index: 5;
 	&__btn{
 		column-gap:remy(40);
 		margin-left: remy(73);

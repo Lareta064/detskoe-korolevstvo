@@ -1,0 +1,11 @@
+mixin galleryFoto(arg)
+	- var n=1
+	- var k=1
+	while n < arg && k < arg
+		a(href="./img/g"+ n++ +".webp" data-lightbox="album-1")
+			img.lazy(src="./img/g"+ k++ +".webp", alt="img")
+
+section.gallery#gallery
+	h2.h2.text-center Фотогалерея
+	.gallery-content
+		+galleryFoto(36)

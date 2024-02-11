@@ -21,15 +21,25 @@
 .header-content__title{
 	position: absolute;
 	z-index: 3;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	color: white;
+	color: var(--ac);
 	.h1{
 		margin-bottom: remy(23);
-		width: 15ch;
-		text-shadow: 1px 1px var(--ac);
+		width: 25ch;
+		text-shadow: 1px -1px goldenrod,
+					-1px -1px goldenrod,
+					1px -1px goldenrod,
+					-1px 1px goldenrod;
+		span{
+			color: goldenrod;
+			text-shadow: 1px -1px var(--ac), -1px 1px var(--ac), 1px 1px var(--ac),
+				-1px -1px var(--ac);
+		
+		}
+		
 	}
 	.btn{
 		font-family: 'OpenSans';
@@ -38,6 +48,8 @@
 	@media (max-width: remy(767)) {
 		top: 43%;
 		.btn {min-width: remy(220);}
+		.h1{width: 100%;}
+		width: 100%;
 	}
 }
 .decore-content{position: relative;
@@ -81,7 +93,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: rgba(45, 40, 36, 0.2);
+		background-color: rgba(45, 40, 36, 0.4);
 	}
 	@media(max-width:remy(1599)) {
 		--swiper-pagination-bottom: 40px;

@@ -4,35 +4,42 @@ section.services.decore-content#services
 	//====== svg-bottom-border =====
 	.decore-content__svg.decore-content__svg--top
 		svg.svg-border-desk( viewBox="0 0 1440 35", fill="none", xmlns="http://www.w3.org/2000/svg")
-			path(d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0", fill="#c7efbd")
+			path(d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0", fill="#f7edc7")
 	
 		svg.svg-border-mob(viewBox="0 0 320 25", fill="none", xmlns="http://www.w3.org/2000/svg")
-			path(d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0", fill="#c7efbd")
+			path(d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0", fill="#f7edc7")
+	
+	.decore-content__svg.rotate-180
+		svg.svg-border-desk( viewBox="0 0 1440 35", fill="none", xmlns="http://www.w3.org/2000/svg")
+			path(d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0", fill="#f7edc7")
+	
+		svg.svg-border-mob(viewBox="0 0 320 25", fill="none", xmlns="http://www.w3.org/2000/svg")
+			path(d="M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0", fill="#f7edc7")
 	.container
 		h2.h2.text-center Наши группы
 		.services-content
 			.services-groups
 				.group-card
 					.group-card__img
-						img(src="./img/serv1.webp", alt="img")
-					.group-card__text Первая младшая группа #[br] (1-3 года)
+						img.lazy(src="./img/serv1.webp", alt="img")
+					.group-card__text Первая младшая группа #[br] (1,3 - 2,3 года)
 						 
 				.group-card.bg-green
 					.group-card__img
-						img(src="./img/serv2.webp", alt="img")
-					.group-card__text Вторая младшая группа #[br] (3-4 года)
+						img.lazy(src="./img/serv2.webp", alt="img")
+					.group-card__text Вторая младшая группа #[br] (2,3 - 3 года)
 				.group-card.bg-pink
 					.group-card__img
-						img(src="./img/serv3.webp", alt="img")
-					.group-card__text Средняя группа #[br] (4-5 лет)
+						img.lazy(src="./img/serv3.webp", alt="img")
+					.group-card__text Средняя группа #[br] (3 - 4,5 лет)
 				.group-card.bg-blue
 					.group-card__img
-						img(src="./img/serv4.webp", alt="img")
-					.group-card__text Старшая группа #[br](5-6 лет)
+						img.lazy(src="./img/serv4.webp", alt="img")
+					.group-card__text Старшая группа #[br](4,5 - 5,5 лет)
 				.group-card.bg-purple
 					.group-card__img
-						img(src="./img/serv5.webp", alt="img")
-					.group-card__text Подготовительная  группа #[br] (6-7 лет)
+						img.lazy(src="./img/serv5.webp", alt="img")
+					.group-card__text Подготовительная  группа #[br] (5,5 -7 лет)
 			
 
 

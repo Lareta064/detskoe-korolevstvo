@@ -1,13 +1,18 @@
 .services{
-	background-color: #c7efbd;
+	background-color: #f7edc7;
 	position: relative;
 	
+}
+.rotate-180 {
+	transform: scaleY(-1);
+	bottom: remy(-25);
+
 }
 .services-groups{
 	display: flex;
 	justify-content: center;
 	gap: remy(50) ;
-	flex-wrap: wrap
+	flex-wrap: wrap;
 }
 .group-card{
 	width: remy(360);

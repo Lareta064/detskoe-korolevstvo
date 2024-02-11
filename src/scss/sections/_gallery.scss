@@ -1,0 +1,30 @@
+.gallery{
+	background-color: #fff;
+}
+.gallery-content{
+	display: grid;
+	gap:3px;
+	grid-template-columns: repeat( 6, 1fr);
+	a:hover{
+		img{filter: grayscale(1)}
+	}
+	img{
+		height: remy(250);
+		width: 100%;
+		border-radius: 3px;
+		transition: .3s; 
+	}
+	@media (max-width: 1599px) {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	@media (max-width: 1364px) {
+	   grid-template-columns: repeat(4, 1fr);
+	}
+	@media (max-width: 1199px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(2, 1fr);
+		img {height:remy(160)}
+	}
+}

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-   
+	$(".lazy").lazy();
 	const jsGroups = document.querySelectorAll('.js-group');
 	if (jsGroups.length > 0){
 		for (let group of jsGroups){
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		loop: true,
 		speed: 1000,
 		effect: "fade",
+		autoplay: true,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
@@ -65,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		loop: true,
 		speed: 1000,
 		slidesPerView: 1.1,
+		spaceBetween: 16,
+		autoplay: true,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
@@ -80,14 +83,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 			768: {
 				slidesPerView: 2,
+				spaceBetween: 20,
 				
 			},
 			1024: {
 				slidesPerView: 3,
-				spaceBetween: 50,
+				spaceBetween: 20,
+				
 			},
 			1440:{
 				slidesPerView: 4,
+				spaceBetween: 20,
 			}
 		},
 	});

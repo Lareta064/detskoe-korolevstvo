@@ -1,7 +1,17 @@
 .h1, .h2, .h4{
-	font-size: remy(70);
+	font-size: remy(80);
 	line-height: 1.1;
 	font-family: 'Montserrat-Bold';
+}
+.h1{
+	font-family: 'MIROSLC';
+	font-weight: 700;
+	@media (max-width: 1199px) {
+		font-size: remy(50);
+	}
+	@media (max-width: 991px) {
+		font-size: remy(40);
+	}
 }
 .h2{
 	font-size: remy(60);
@@ -12,6 +22,7 @@
 	background: linear-gradient(45deg, rgb(172, 8, 27) 33%, rgb(215, 11, 34) 66%, rgb(241, 66, 86));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	color: rgb(172, 8, 27);
 	display: table;
 	@media (max-width: remy(767)) {
 	  font-size:remy(38) ;
@@ -51,11 +62,7 @@ button.text-accent, a.text-accent{
 .bg-blue{background-color: #2aaae2!important;;} 
 .bg-purple{background-color:#c122d8!important;}
 .text-center{text-align: center; margin-left: auto; margin-right: auto;}
-@media (max-width: remy(1199)) {
-	.h1 {font-size: remy(54);}
-		
-	
-}
+
 @media (max-width: remy(767)) {
-	.h1{font-size: remy(32);}
+	.h1{font-size: remy(40);}
 }
